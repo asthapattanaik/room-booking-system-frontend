@@ -1,0 +1,14 @@
+<div class="room-grid">
+  <div *ngFor="let floor of floors" class="floor">
+    <div class="floor-container">
+      <span class="floor-number">F{{ floor.floorNumber }}</span>
+      <div class="rooms">
+        <div *ngFor="let room of floor.rooms" 
+             class="room" 
+             [ngClass]="{'booked': room.isBooked}">
+          {{ room.roomNumber }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

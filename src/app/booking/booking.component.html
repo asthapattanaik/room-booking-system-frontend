@@ -1,0 +1,9 @@
+<div class="booking-container">
+  <label for="numRooms" class="input-label">Enter number of rooms</label>
+  <div class="input-group">
+    <div class="input-wrapper">
+      <input id="numRooms" type="number" [(ngModel)]="numRooms" min="1" max="5" class="room-input" placeholder="1-5">
+    </div>
+    <button (click)="bookRooms()" class="book-btn">Book Now</button>
+  </div>
+</div>

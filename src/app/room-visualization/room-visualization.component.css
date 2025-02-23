@@ -1,0 +1,40 @@
+.room-grid {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.floor-container {
+  display: flex;
+  align-items: center;
+}
+
+.floor-number {
+  font-weight: normal;
+  font-size: 12px;
+  margin-right: 10px; 
+  width: 30px;
+  text-align: right;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.room {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #48d441;
+  transition: background-color 0.3s ease;
+}
+
+.room.booked {
+  background-color: red;
+  font-weight: bold;
+}
